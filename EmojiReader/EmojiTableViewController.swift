@@ -49,6 +49,9 @@ class EmojiTableViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+        return .delete
+    }
     
     /*
      // Override to support conditional editing of the table view.
