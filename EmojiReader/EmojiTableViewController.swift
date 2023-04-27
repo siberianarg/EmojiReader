@@ -9,6 +9,12 @@ import UIKit
 
 class EmojiTableViewController: UITableViewController {
     
+    let objects = [
+        Emoji(emoji: "🥰", name: "Love", description: "Let's love each other", isFavourite: false),
+        Emoji(emoji: "⚽️", name: "Footboll", description: "Let's play football together", isFavourite: false),
+        Emoji(emoji: "😸", name: "Cat", description: "Cat's the cutest animal", isFavourite: false)
+    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -31,7 +37,7 @@ class EmojiTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 5
+        return objects.count
     }
     
     
