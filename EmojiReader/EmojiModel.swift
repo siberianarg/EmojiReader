@@ -13,5 +13,4 @@ struct Emoji {
     var description: String
     var isFavourite: Bool
     
-    
 }

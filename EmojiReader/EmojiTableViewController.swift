@@ -44,11 +44,7 @@ class EmojiTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "emojiCell", for: indexPath) as! EmojiTableViewCell
         let object = objects[indexPath.row] // номер элемента строки
-        let object2 = objects[0]
-        cell.emojiLabel.text = object.emoji
-        cell.nameLabel.text = object.name
-        cell.descriptionLabel.text = object.description
-        
+        cell.set(object: object)
         
         return cell
     }
