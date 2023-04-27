@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26623B9829FAA5FB00A7CFA3 /* EmojiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26623B9729FAA5FB00A7CFA3 /* EmojiTableViewCell.swift */; };
 		267329B129F8F9C600716E5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267329B029F8F9C600716E5D /* AppDelegate.swift */; };
 		267329B329F8F9C600716E5D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267329B229F8F9C600716E5D /* SceneDelegate.swift */; };
 		267329B829F8F9C600716E5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 267329B629F8F9C600716E5D /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		26623B9729FAA5FB00A7CFA3 /* EmojiTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiTableViewCell.swift; sourceTree = "<group>"; };
 		267329AD29F8F9C600716E5D /* EmojiReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmojiReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		267329B029F8F9C600716E5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		267329B229F8F9C600716E5D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				267329B029F8F9C600716E5D /* AppDelegate.swift */,
+				26623B9729FAA5FB00A7CFA3 /* EmojiTableViewCell.swift */,
 				267329B229F8F9C600716E5D /* SceneDelegate.swift */,
 				267329C429F8FD1700716E5D /* EmojiTableViewController.swift */,
 				267329B629F8F9C600716E5D /* Main.storyboard */,
@@ -140,6 +143,7 @@
 			files = (
 				267329C529F8FD1700716E5D /* EmojiTableViewController.swift in Sources */,
 				267329B129F8F9C600716E5D /* AppDelegate.swift in Sources */,
+				26623B9829FAA5FB00A7CFA3 /* EmojiTableViewCell.swift in Sources */,
 				267329B329F8F9C600716E5D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
