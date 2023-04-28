@@ -19,9 +19,18 @@ class EmojiEditTableViewController: UITableViewController {
         super.viewDidLoad()
         
         self.title = "Emoji Edit"
+        updateSaveButtonState()
+    }
+    
+    private func updateSaveButtonState() {
+        let emojiText = emojiTextField.text ?? ""
+        let nameText = nameTextField.text ?? ""
+        let descriptionText = descriptionTextField.text ?? ""
         
+        saveButton.isEnabled = !emojiText.isEmpty && !nameText.isEmpty && !descriptionText.isEmpty
     }
     
     @IBAction func textChanged(_ sender: UITextField) {
+        updateSaveButtonState()
     }
 }
