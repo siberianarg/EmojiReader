@@ -9,6 +9,8 @@ import UIKit
 
 class EmojiEditTableViewController: UITableViewController {
     
+    var emoji = Emoji(emoji: "", name: "", description: "", isFavourite: false)
+    
     @IBOutlet weak var emojiTextField: UITextField!
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var descriptionTextField: UITextField!
@@ -32,5 +34,16 @@ class EmojiEditTableViewController: UITableViewController {
     
     @IBAction func textChanged(_ sender: UITextField) {
         updateSaveButtonState()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        guard segue.identifier == "saveSegue" else { return }
+        let emoji = emojiTextField.text ?? ""
+        let name = nameTextField.text ?? ""
+        let description = descriptionTextField.text ?? ""
+        
+        self.emoji = Emoji(emoji: emoji, name: name, description: description, isFavourite: self.emoji.isFavourite)
+        
     }
 }
