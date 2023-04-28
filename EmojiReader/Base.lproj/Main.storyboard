@@ -186,9 +186,14 @@
                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="hNy-g4-4xK">
                             <connections>
                                 <action selector="canceledTapped:" destination="bso-g8-Rng" id="CGR-sR-Vdq"/>
+                                <segue destination="hmw-H9-GfJ" kind="unwind" unwindAction="unwindSegueWithSegue:" id="t1x-j1-lyR"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Save" style="done" id="EKc-gM-SHA"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save" style="done" id="EKc-gM-SHA">
+                            <connections>
+                                <segue destination="hmw-H9-GfJ" kind="unwind" identifier="saveSegue" unwindAction="unwindSegueWithSegue:" id="qJr-hU-jtP"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="descriptionTextField" destination="Dw7-VN-vvK" id="n8c-KM-aID"/>
@@ -198,6 +203,7 @@
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="alb-kB-f3n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="hmw-H9-GfJ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2626.0869565217395" y="-28.125"/>
         </scene>
