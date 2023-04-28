@@ -71,11 +71,50 @@
                             <outlet property="delegate" destination="0v5-zS-uQH" id="6qK-XI-XGN"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="0Hx-BB-ar2"/>
+                    <navigationItem key="navigationItem" id="0Hx-BB-ar2">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Tsl-43-K7M">
+                            <connections>
+                                <segue destination="0Ja-fZ-y3D" kind="show" id="5hU-Ol-lnZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h82-K5-7XP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="771.01449275362324" y="-28.125"/>
+        </scene>
+        <!--Emoji Edit Table View Controller-->
+        <scene sceneID="Kec-CL-qmw">
+            <objects>
+                <tableViewController id="bso-g8-Rng" customClass="EmojiEditTableViewController" customModule="EmojiReader" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" id="KfF-TQ-hzu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="emojiEditCell" id="22u-ow-NJx">
+                                <rect key="frame" x="0.0" y="55.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="22u-ow-NJx" id="9eF-b8-tnH">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="bso-g8-Rng" id="YNZ-RI-d4K"/>
+                            <outlet property="delegate" destination="bso-g8-Rng" id="krm-ce-OLe"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="yhV-JB-src">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="hNy-g4-4xK"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="EKc-gM-SHA"/>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="alb-kB-f3n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2626.0869565217395" y="-28.125"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="sjo-zX-Th4">
@@ -94,6 +133,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="apd-hj-v53" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-139.13043478260872" y="-28.125"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="EAD-1w-IK6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0Ja-fZ-y3D" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="Ews-hz-FhH"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QAl-nK-7JL">
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bso-g8-Rng" kind="relationship" relationship="rootViewController" id="c3h-oX-bCK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oq0-He-Xyv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1715.9420289855075" y="-28.125"/>
         </scene>
     </scenes>
     <resources>
