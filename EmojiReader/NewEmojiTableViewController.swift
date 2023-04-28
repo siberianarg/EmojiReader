@@ -29,7 +29,6 @@ class NewEmojiTableViewController: UITableViewController {
         let emojiText = emojiTextField.text ?? ""
         let nameText = nameTextField.text ?? ""
         let descriptionText = descriptionTextField.text ?? ""
-        
         saveButton.isEnabled = !emojiText.isEmpty && !nameText.isEmpty && !descriptionText.isEmpty
     }
     
@@ -49,8 +48,6 @@ class NewEmojiTableViewController: UITableViewController {
         let emoji = emojiTextField.text ?? ""
         let name = nameTextField.text ?? ""
         let description = descriptionTextField.text ?? ""
-        
         self.emoji = Emoji(emoji: emoji, name: name, description: description, isFavourite: self.emoji.isFavourite)
-        
     }
 }
