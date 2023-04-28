@@ -7,7 +7,7 @@
 
 import UIKit
 
-class EmojiEditTableViewController: UITableViewController {
+class NewEmojiTableViewController: UITableViewController {
     
     var emoji = Emoji(emoji: "", name: "", description: "", isFavourite: false)
     
